@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: sans-serif;
+    background-image: url(bk.jpeg);
+}
+.logo img{
+    float: left;
+    width: 180px;
+    height: auto;
+    padding: 10px 10px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    background: linear-gradient(to right, brown, burlywood);
+    color: white;
+    padding-top: 30px;
+    min-height: 40px;
+}
+
+header nav{
+    float: right;
+    margin-top: 1px;
+}
+
+section li{
+    float: right;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a{
+    color: burlywood;
+    text-decoration: uppercase;
+    font-size: 16px;
+}
+
+.btn1{
+    border: 2px solid;
+    padding: 5px 30px;
+    color:black;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 20px;
+    margin: 5px;
+    float: right;
+}
+
+.btn1:hover{
+    background:burlywood;
+    color:black;
+    padding-left: 50px;
+    transform: translate(-50%;-50%);
+}
+
+.btn2{
+    border: 2px solid;
+    padding: 5px 30px;
+    color: black;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 20px;
+    float: right;
+    margin: 5px;
+}
+
+.btn2:hover{
+    background: burlywood;
+    color:black;
+    padding-right: 50px;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 1px 5px;
+    border: 1px solid;
+    transition: 0.6s;
+    margin-top: 10px;
+}
+ul li a:hover{
+    background-color:wheat;
+    color: black;
+    padding-bottom: 10px;
+    
+}
+ul li.active a{
+    background-color:wheat;
+    color: black;
+}
+
+header #branding, header .active a{
+    color: black;
+    font-weight: bold;
+}
+
+section a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+#showcase h1{
+    margin-top: 120px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px brown;
+    -moz-animation: animasiputar 2s infinite linear;
+    -webkit-animation: animasiputar 2s infinite linear;
+    border-radius: 40px;
+}
+
+#newsletter{
+    padding: 15px;
+    color: black;
+    background: linear-gradient(to right, burlywood, brown);
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+}
+
+.buttonsubs{
+    height: 38px;
+    background-color: brown;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 50%;
+    padding: 5px;
+
+}
+
+#boxes .box img{
+    width: 100px;
+    padding-left: 10px;
+}
+
+.btn3{
+    padding: 10px 10px;
+    color:black;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 30px;
+    margin: 5px;
+    background-color:brown;
+}
+
+.btn3:hover{
+    background:burlywood;
+    color:black;
+    padding-left: 10px;
+    transform: translate(-50%;-50%);
+    text-align: center;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background: linear-gradient(to right, brown, brown);
+    text-align: center;
+}
+
+/*media query*/
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box
+
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top:40px;
+    }
+
+    #newsletter button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter input[type="email"]{
+        width: 100px;
+        margin-bottom:5px;
+    }
+
+    section li{
+        float: left;
+        padding: auto;
+    }
+    }
